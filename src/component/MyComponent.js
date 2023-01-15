@@ -44,7 +44,6 @@ MyComponent.defaultProps = {
     age : 0,
     // email : "지정안됨",
     addr : "서울시" //addr은 전달되지 않지만 기본값
-
 }
 
 /* props의 타입검증 컴포넌트명.propTypes={} */

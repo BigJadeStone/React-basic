@@ -31,6 +31,7 @@ function App() {
         {name === '홍길동' ? '홍길동입니다' : '홍길동이 아닙니다'}
         {name === '이순신' ? <h3>이순신입니다</h3> : <h3>이순신이 아닙니다</h3>}
         {age === 30 ? <h3>20입니다</h3> : null}
+        <div> {myStyle.backgroundColor}</div>
       </div>
 
     <div className="App">
