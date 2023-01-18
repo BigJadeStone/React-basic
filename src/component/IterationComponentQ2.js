@@ -54,15 +54,18 @@ const IterationComponentQ2 = () => {
         // console.log(search_result);
         setDatas(search_result);
         setSearch('');
+    }
 
-        
+    const handleKeyDown = (e) => {
+        // console.log(e.keyCode); // keyCode 가 13임을 확인
+        if(e.keyCode === 13) handleClick();
     }
 
     return (
         <>
             <h3>컴포넌트 반복 실습</h3>
             <h3>검색기능 - 대소문자를 구분하지 않고 teacher, type에 포함된 데이터만 필터링</h3>
-            <div>Search: <input type="text" onChange={handleChange2} value={search}/><button type="button" onClick={handleClick}>검색</button></div>
+            <div>Search: <input type="text" onChange={handleChange2} onKeyDown={handleKeyDown} value={search}/><button type="button" onClick={handleClick}>검색</button></div>
 
             <select onChange={handleChange}>
                 {options}
